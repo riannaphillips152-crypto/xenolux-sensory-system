@@ -1,0 +1,31 @@
+body { margin: 0; background: #000; overflow: hidden; font-family: sans-serif; }
+
+#ui-layer {
+    position: absolute;
+    width: 100%; height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+}
+
+h1 { color: #fff; letter-spacing: 0.8em; font-size: 1.2rem; margin: 0; }
+p { color: rgba(255,255,255,0.5); font-size: 0.7rem; letter-spacing: 0.2em; }
+
+#mic-status-bar {
+    width: 200px;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    align-self: center;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#signal-fill {
+    height: 100%;
+    width: 0%;
+    background: #00f2ff; /* Xenolux Cyan */
+    transition: width 0.1s ease;
+}
