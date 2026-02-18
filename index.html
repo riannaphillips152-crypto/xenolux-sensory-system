@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>XENOLUX // HYBRID SYSTEM</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+
+    <div id="ui">
+        <div class="brand-group">
+            <h1>XENOLUX SENSORY SYSTEM</h1>
+            <p id="status">CLICK OR TAP TO SYNC</p>
+            
+            <div id="controls">
+                <label>GAIN BOOST</label>
+                <div id="slider-container"></div>
+                <button id="capture-btn" onclick="saveArt()">CAPTURE IMAGE</button>
+            </div>
+        </div>
+        
+        <div id="meter-bg">
+            <div id="meter-fill"></div>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+
+</body>
+</html>
